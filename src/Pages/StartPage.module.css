@@ -1,0 +1,96 @@
+.load {
+  text-align: center;
+  margin-top: 25em;
+  animation: load 700ms ease-in;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.welcome {
+  font: normal normal normal 55px/73px Javanese Text;
+}
+
+.button {
+  width: 250px;
+  height: 60px;
+  border: none;
+  color: black;
+  border-radius: 15px;
+  transition: ease-out 0.7s;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  background: transparent
+    radial-gradient(closest-side at 50% 50%, #e2d198 0%, #cbab38 100%) 0% 0%
+    no-repeat padding-box;
+  font: normal normal normal 35px/73px Javanese Text;
+  text-align: center;
+  top: 50px;
+}
+
+.button:hover {
+  color: white;
+  cursor: pointer;
+}
+.button:before {
+  transition: 0.8s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #044599;
+  border-radius: 15px;
+}
+
+.button:hover:before {
+  transition: 0.8s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* IS SONO .button {
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 100px;
+    box-shadow: inset 0 0 0 0 green;
+    transition: ease-out 0.5s;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
+
+.button:hover {
+    box-shadow: inset 300px 0 0 0 green;
+} */
+
+/* SENAS .button {
+  background: #3dce5b 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 2px #00000029, 0px 20px 0px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  font: normal normal normal 56px/65px Cambria;
+  color: #ffffff;
+  padding: 0 2%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+} */
